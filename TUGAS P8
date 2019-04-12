@@ -1,0 +1,49 @@
+#include<iostream>
+using namespace::std;
+
+double hasil(float nilai){
+if( nilai>80)
+ {cout<< " MENDAPAT NILAI 'A' ";}
+else if( nilai>60)
+ {cout<< " MENDAPAT NILAI 'B' ";}
+else if( nilai>40)
+ {cout<< " MENDAPAT NILAI 'C' ";}
+ else if( nilai>20)
+ {cout<< " MENDAPAT NILAI 'D' ";}
+else
+{cout<< " MENDAPAT NILAI  'E' ";}}
+
+
+ int main(){
+struct redd {int u,a,s,b;
+    float h,ss,fh,rr,bg;};
+cout<<"------------------------------------"<<endl;
+cout<<"---MENGHITUNG NILAI IPK MAHASISWA---"<<endl;
+cout<<"------------------------------------"<<endl;
+cout<<endl;
+
+redd kape;
+cout<<" NILAI UTS  : ";cin>>kape.u;
+cout<<" NILAI UAS  : ";cin>>kape.a;
+cout<<" NILAI TUGAS: ";cin>>kape.s;
+cout<<" NILAI ABSEN: ";cin>>kape.b;
+cout<<endl;
+kape.h=kape.u*20/(float)100;
+kape.ss=kape.a*30/(float)100;
+kape.fh=kape.s*35/(float)100;
+kape.rr=kape.b*15/(float)100;
+
+cout<< "NILAI UTS SEMUA   = "<<kape.h<<endl;
+cout<< "NILAI UAS SEMUA   = "<<kape.ss<<endl;
+cout<< "NILAI TUGAS SEMUA = "<<kape.fh<<endl;
+cout<< "NILAI ABSEN SEMUA = "<<kape.rr<<endl<<endl;
+cout<<"------------------------------------"<<endl;
+kape.bg=kape.h+kape.ss+kape.fh+kape.rr;
+cout<< "JUMLAH NILAI AKHIR SEMUA NYA = "<<kape.bg<<endl;
+cout<<endl;
+hasil(kape.bg);
+
+cout<<endl<<"------------------------------------"<<endl;
+
+
+}
